@@ -36,6 +36,7 @@ app.post('/tinder/card',(req,res)=>{
 })
 app.get('/tinder/card',(req,res)=>{
     const dbCard=req.body;
+    console.log(req);
     Cards.find(dbCard,(err,data)=>{
         if (err){
             console.log(err);
